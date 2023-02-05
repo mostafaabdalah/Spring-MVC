@@ -9,9 +9,16 @@
 </head>
 <body>
 <f:form action= "processmvctags" modelAttribute="student">
-	<f:input path="fName"/>
-	<f:input path="lName"/>
-	<f:input path="age"/>
+	FirstName : <f:input path="fName"/>
+	LastName : <f:input path="lName"/>
+	Age : <f:input path="age"/>
+	Country :
+	<f:select  path="country">
+		<f:option value="Egypt" label="EG"/>
+		<f:option value="Brazil" label="BR"/>
+		<f:option value="Germany" label="GE"/>
+	
+	</f:select>
 	<input type="submit" value="Done"/>
 	
 </f:form>
