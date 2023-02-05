@@ -7,7 +7,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+// http://localhost:8080/spring-mvc
+
 @Controller
+@RequestMapping("")
 public class MainController {
 
 	@RequestMapping("/")
@@ -22,11 +25,7 @@ public class MainController {
 	public String myPro() {
 		return "myprofile";
 	}
-	@RequestMapping("/signin")
-	//http://localhost:8080/spring-mvc/login
-	public String myLogin() {
-		return "login";
-	}
+	
 	
 	/*
 	@RequestMapping("/loginprocess")
