@@ -7,10 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-<p>FirstName : ${student.fName }</p>
-<p>LastName : ${student.lName} </p>
-<p>Age : ${student.age }</p>
-<p>Country : ${student.country}</p>
+<p>FirstName : ${student.fName }</p> 
+<p>LastName : ${student.lName} </p> 
+<p>Age : ${student.age }</p> 
+<p>Country : ${student.country}</p> 
+<p>Language : ${student.language}</p>
+
 
 </body>
 </html>

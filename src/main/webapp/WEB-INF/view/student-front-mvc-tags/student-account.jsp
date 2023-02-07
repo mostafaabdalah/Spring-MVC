@@ -9,16 +9,19 @@
 </head>
 <body>
 <f:form action= "processmvctags" modelAttribute="student">
-	FirstName : <f:input path="fName"/>
-	LastName : <f:input path="lName"/>
-	Age : <f:input path="age"/>
+	FirstName : <f:input path="fName"/> <br>
+	LastName : <f:input path="lName"/><br>
+	Age : <f:input path="age"/><br>
 	Country :
 	<f:select  path="country">
-		<f:option value="Egypt" label="EG"/>
-		<f:option value="Brazil" label="BR"/>
-		<f:option value="Germany" label="GE"/>
-	
-	</f:select>
+		<f:options items="${student.countryOPtions}"/>
+	</f:select><br>
+	chosse your language :
+	<f:radiobutton path="language" value="Java"/>Java
+	<f:radiobutton path="language" value="Php"/>Php
+	<f:radiobutton path="language" value="C++"/>C++
+	<f:radiobutton path="language" value="C#"/>C#
+				<br>
 	<input type="submit" value="Done"/>
 	
 </f:form>
