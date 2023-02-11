@@ -22,6 +22,11 @@
 	<f:radiobutton path="language" value="C++"/>C++
 	<f:radiobutton path="language" value="C#"/>C#
 				<br>
+	Players : 
+	<f:checkbox path="players" value="Messi"/>Messi	
+	<f:checkbox path="players" value="CR7"/>CR7		
+	<f:checkbox path="players" value="Salah"/>Salah		
+		
 	<input type="submit" value="Done"/>
 	
 </f:form>

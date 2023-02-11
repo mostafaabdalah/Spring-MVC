@@ -10,6 +10,7 @@ public class Student {
 	private String age;
 	private String country;
 	private String language;
+	private String [] players;
 
 	private HashMap<String, String> countryOPtions;
 	
@@ -65,6 +66,16 @@ public class Student {
 	public void setLanguage(String language) {
 		this.language = language;
 	}
+
+	public String[] getPlayers() {
+		return players;
+	}
+
+	public void setPlayers(String[] players) {
+		this.players = players;
+	}
+
+	
 
 	
 

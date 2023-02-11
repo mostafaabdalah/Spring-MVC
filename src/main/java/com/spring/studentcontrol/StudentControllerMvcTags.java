@@ -20,6 +20,7 @@ public class StudentControllerMvcTags {
 		Student student = new Student();
 		model.addAttribute("student", student);
 		return "student-front-mvc-tags/student-account";
+		
 	}
 	
 	
