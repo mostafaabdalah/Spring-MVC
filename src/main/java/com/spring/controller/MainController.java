@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 // http://localhost:8080/spring-mvc
 
 @Controller
-@RequestMapping("")
+@RequestMapping("/meme")
 public class MainController {
 
-	@RequestMapping("/")
+	@RequestMapping("/momo")
 	//http://localhost:8080/spring-mvc
 	public String main() {
 		return "mainpage";
