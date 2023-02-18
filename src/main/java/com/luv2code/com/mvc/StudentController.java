@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("")
+@RequestMapping("student")
 public class StudentController {
 
-	@RequestMapping("/")
+	@RequestMapping("/showForm")
 	public String showForm(Model theModel) {
 		
 		// create student object
@@ -25,7 +25,7 @@ public class StudentController {
 	}
 	
 	
-	@RequestMapping("/processform")
+	@RequestMapping("/processForm")
 	public String processForm(@ModelAttribute("student") Student theStudent) {
 		
 		System.out.println("the student :" + theStudent.getFirstName()
